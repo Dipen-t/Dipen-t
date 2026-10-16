@@ -64,9 +64,9 @@ Client code stays private. I'm happy to talk through the architecture, trade-off
 ## My contribution skyline
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-view.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./profile-3d-contrib/profile-season-animate.svg" />
-  <img src="./profile-3d-contrib/profile-season-animate.svg" width="100%" alt="A 3D skyline of my GitHub contributions over the past year" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/contributions-light.svg" />
+  <img src="./assets/contributions-light.svg" width="100%" alt="A 3D skyline of my GitHub contributions over the past year" />
 </picture>
 
 <sub>Refreshes daily with <a href="https://github.com/yoshi389111/github-profile-3d-contrib">GitHub Profile 3D Contrib</a>.</sub>
