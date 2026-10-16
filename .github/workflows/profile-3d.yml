@@ -35,7 +35,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add profile-3d-contrib/ assets/contributions-dark.svg assets/contributions-light.svg
+          git add profile-3d-contrib/ assets/contributions-dark-depth.svg assets/contributions-light-depth.svg
           if ! git diff --cached --quiet; then
             git commit -m "chore: refresh 3D contribution skyline"
             git push

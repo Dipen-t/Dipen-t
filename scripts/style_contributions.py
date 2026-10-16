@@ -89,4 +89,4 @@ for theme in ("dark", "light"):
     ET.SubElement(root, tag("text"), {"x":"28","y":"354","fill":muted,"font-size":"19"}).text = "Earlier"
     ET.SubElement(root, tag("text"), {"x":"1252","y":"354","fill":muted,"font-size":"19","text-anchor":"end"}).text = "Recent"
     Path("assets").mkdir(exist_ok=True)
-    ET.ElementTree(root).write(f"assets/contributions-{theme}.svg", encoding="unicode")
+    ET.ElementTree(root).write(f"assets/contributions-{theme}-depth.svg", encoding="unicode")
