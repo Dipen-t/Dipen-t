@@ -1,65 +1,101 @@
-<img src="./assets/profile-header.svg" width="100%" alt="Dipen. Full stack engineer. Products, systems and applied AI." />
+<img src="./assets/dipen-talreja.svg" width="100%" alt="Dipen Talreja. Full-stack engineer building real-time SaaS and applied AI tools." />
 
 <p>
-  <a href="mailto:dipenntalreja@gmail.com"><strong>Email me</strong></a>
+  <a href="mailto:dipenntalreja@gmail.com"><strong>Get in touch</strong></a>
   &nbsp; / &nbsp;
-  <a href="https://github.com/Dipen-t?tab=repositories">Browse my work</a>
+  <a href="#selected-work">Selected work</a>
+  &nbsp; / &nbsp;
+  <a href="https://github.com/Dipen-t?tab=repositories">All repositories</a>
 </p>
 
-I turn complex workflows into software people can actually use — from live collaboration and multi-tenant platforms to voice assistants and developer tools.
-
-I enjoy the whole process: making sense of a vague idea, designing the system, and following it through to a working product.
+**I'm Dipen Talreja, a full-stack engineer building real-time SaaS products and applied AI tools.** I work across interfaces, APIs, data, and deployment, with a particular interest in tenant isolation, reliable background work, and AI systems with clear boundaries.
 
 ## Selected work
 
-### [LeadFlow](https://github.com/Dipen-t/LeadFlow)
-A mortgage brokerage CRM built end to end, with isolated tenants, a live lead pipeline, client portals, and background document workflows.
+I built the four projects below independently.
+
+### [LeadFlow](https://github.com/Dipen-t/LeadFlow) · Live demo
+
+A CRM for mortgage brokerages, from lead intake to client onboarding.
 
 <a href="https://github.com/Dipen-t/LeadFlow">
-  <img src="https://raw.githubusercontent.com/Dipen-t/LeadFlow/main/docs/screenshots/dashboard.png" width="100%" alt="LeadFlow brokerage dashboard showing lead analytics and task summaries" />
+  <img src="./assets/leadflow-pipeline.jpg" width="100%" alt="LeadFlow's application-only view: role-aware navigation and a multi-stage lead pipeline" />
 </a>
 
-<sub>React / TypeScript / Node.js / MongoDB / Redis / Socket.IO</sub>
+**My work:** frontend, backend, database integration, live updates, background workers, and deployment.  
+**Engineering detail:** optimistic pipeline updates reconcile server-side version conflicts; Socket.IO keeps connected clients synchronized.
 
-[Try the demo](https://lead-flow-umber.vercel.app) &nbsp; · &nbsp; [Read the engineering breakdown](https://github.com/Dipen-t/LeadFlow#architecture-overview)
+<sub>React · TypeScript · Node.js · MongoDB · Redis · BullMQ · Socket.IO</sub>
 
-### [VoiceOps](https://github.com/Dipen-t/voice-ops)
-A Hinglish voice assistant prototype with streaming speech and source-backed retrieval over a fictional insurance FAQ. Includes a recorded-incident investigation mode with scoped MCP tools.
+[Try the demo](https://lead-flow-umber.vercel.app) · [Architecture and setup](https://github.com/Dipen-t/LeadFlow#architecture-overview)
 
-<sub>TypeScript / Fastify / PostgreSQL / pgvector / Sarvam / MCP</sub>
+### [VoiceOps](https://github.com/Dipen-t/voice-ops) · Local prototype
 
-### [EvolveKit](https://github.com/Dipen-t/living-ai)
-A foundation for changing an application's behavior through validated proposals. Preview changes, approve a specific revision, publish it, and roll back — with registered capabilities and an audit trail.
+A Hinglish voice assistant that retrieves answers from a fictional insurance FAQ and cites its sources.
 
-<sub>TypeScript / React / Fastify / Prisma / PostgreSQL</sub>
+<a href="https://github.com/Dipen-t/voice-ops">
+  <img src="https://raw.githubusercontent.com/Dipen-t/voice-ops/main/docs/screenshots/liquid-assistant-desktop.jpg" width="100%" alt="VoiceOps Hinglish assistant interface with a voice conversation panel, transcript, and sample questions" />
+</a>
 
-### [Checkpoint](https://github.com/Dipen-t/checkpoint)
-An experimental tool that gives coding agents project rules and architectural memory. Local retrieval, human decision points, and Git diff checks help keep changes within scope.
+**My work:** the voice interface, streaming speech pipeline, retrieval, and recorded-incident investigation mode.  
+**Engineering detail:** PostgreSQL/pgvector retrieval supports sourced answers; scoped, read-only MCP tools support incident investigation.
 
-<sub>TypeScript / CLI / BM25 / Git</sub>
+<sub>TypeScript · React · Fastify · PostgreSQL/pgvector · Sarvam · MCP</sub>
+
+[Setup and current limits](https://github.com/Dipen-t/voice-ops#local-setup) · [Voice assistant status](https://github.com/Dipen-t/voice-ops/blob/main/docs/hindi-assistant-status.md)
+
+### [EvolveKit](https://github.com/Dipen-t/living-ai) · Working local demo
+
+A runtime foundation for proposing changes to an application's registered capabilities, with review before activation.
+
+<a href="https://github.com/Dipen-t/living-ai">
+  <img src="./assets/evolvekit-workflow.svg" width="100%" alt="EvolveKit workflow: propose, preview, approve, publish, and roll back" />
+</a>
+
+**My work:** the TypeScript capability model, React adapter, proposal lifecycle, API, persistence, and planner integrations.  
+**Engineering detail:** server validation, exact-revision approval, atomic publication, and rollback keep changes traceable.
+
+<sub>TypeScript · React · Fastify · Prisma · PostgreSQL</sub>
+
+[Run the demo and inspect the design](https://github.com/Dipen-t/living-ai#run-locally)
+
+### [Checkpoint](https://github.com/Dipen-t/checkpoint) · Experimental developer tool
+
+Architectural guardrails and local decision memory for AI coding agents.
+
+**My work:** the rule-retrieval, decision, and verification workflow.  
+**Engineering detail:** local BM25 retrieval surfaces relevant constraints; Git diff checks compare actual changes with the agent's claims.
+
+<sub>TypeScript · CLI · BM25 · Git</sub>
+
+[Quickstart and limitations](https://github.com/Dipen-t/checkpoint#-30-second-quickstart)
 
 <details>
-<summary><strong>More things I've built</strong></summary>
+<summary><strong>More projects</strong></summary>
 
-- **[Saathi](https://github.com/Dipen-t/Saathi)** — local discovery, real-time conversations, and plans that bring people together.
-- **[Tracker](https://github.com/Dipen-t/Tracker)** — task management, reliable timers, productivity charts, and AI-assisted task creation. [Demo](https://tracker-chi-blue.vercel.app/)
+- **[Saathi](https://github.com/Dipen-t/Saathi)** — nearby discovery, real-time conversations, and plans that bring people together.
+- **[Tracker](https://github.com/Dipen-t/Tracker)** — task management, server-side timers, productivity charts, and AI-assisted task creation. [Demo](https://tracker-chi-blue.vercel.app/)
 - **[Dhanlaxmi Catering](https://github.com/Dipen-t/dhanlaxmi-ui)** — a responsive catering website with scroll-driven compositions and accessible motion.
 
 </details>
 
-## Beyond public repositories
+## Production experience
 
-My professional work includes offline municipal surveys across **150,000+ records and 50+ wards**, multi-tenant platforms for **10+ organizations**, browser automation for **100+ colleges**, and GPS-linked construction operations.
+Beyond these public projects, my professional work includes:
 
-Client code stays private. I'm happy to talk through the architecture, trade-offs, and lessons.
+- **Municipal field operations:** offline surveys, GIS mapping, and synchronization across **150,000+ records and 50+ wards**.
+- **Multi-tenant platforms:** organization isolation, review workflows, and access control for **10+ organizations**.
+- **Browser automation:** structured extraction from dynamic websites for **100+ colleges**.
+- **Construction operations:** GPS-linked check-ins, material approvals, and photo-verified dispatch.
 
-## What I work with
+Client code is private; I can discuss the engineering decisions and trade-offs.
 
-**Interfaces** &nbsp; React, Next.js, TypeScript, Tailwind CSS  
-**Systems** &nbsp; Node.js, Fastify, Express, PHP, WebSockets, Socket.IO  
-**Data** &nbsp; PostgreSQL, MongoDB, MySQL, Redis, BullMQ, Prisma, Drizzle, Supabase  
-**AI & automation** &nbsp; RAG, pgvector, MCP, Playwright  
-**Infrastructure & maps** &nbsp; Docker, Linux, Git, QGIS, Mapbox
+## Core toolkit
+
+**Frontend:** TypeScript, React, Next.js, Tailwind CSS  
+**Backend & data:** Node.js, Fastify, PostgreSQL, MongoDB, Redis  
+**Systems & AI:** WebSockets, BullMQ, RAG, pgvector, MCP  
+**Delivery & automation:** Docker, Git, Playwright
 
 ## My contribution skyline
 
