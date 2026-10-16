@@ -1,104 +1,121 @@
+<p align="center">
+  <img src="./assets/header.svg" width="100%" alt="Dipen — Full Stack Engineer. From product idea to working system." />
+</p>
+
+<p align="center">
+  <a href="#selected-projects">Projects</a> ·
+  <a href="#engineering-in-the-real-world">Experience</a> ·
+  <a href="#toolbox">Toolbox</a> ·
+  <a href="mailto:dipenntalreja@gmail.com">Get in touch</a>
+</p>
+
 # Hey, I'm Dipen 👋
 
-I'm a full stack engineer who ends up building the kind of software that has to deal with messy real-world stuff — real-time chat, multi-tenant systems, GIS data, browser automation, apps that need to work offline, and general "the data is huge and the requirements are unclear" problems.
+I build full-stack products for messy, real-world problems: real-time collaboration, multi-tenant workflows, offline field operations, and AI tools with clear boundaries.
 
-Honestly, the part I enjoy most isn't writing the feature itself — it's figuring out what people actually need before I write it. Talking through vague requirements, sketching out how a system should behave, and then following it all the way from idea to something running in production (and then fixing it when production teaches me I was wrong about something).
+I like owning the whole loop — understanding what people need, designing the system, building it, and learning from what happens when people use it.
 
-Right now I'm building **Saathi**.
+**Currently exploring:** voice interfaces with retrieval, controlled AI-driven application changes, and guardrails for coding agents.
 
-> Most of my client and production work is under NDA, so I can't share the actual code. What I can share is the engineering context — the problems, the architecture decisions, the trade-offs.
+## Selected projects
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 01 / LeadFlow
+**From first lead to client onboarding.**
+
+A multi-tenant CRM for mortgage brokerages: configurable pipelines, optimistic drag-and-drop, role-based portals, live updates, and background document workflows.
+
+`React` `TypeScript` `Node.js` `MongoDB` `Redis` `Socket.IO`
+
+[Explore code →](https://github.com/Dipen-t/LeadFlow) · [Live demo ↗](https://lead-flow-umber.vercel.app)
+
+</td>
+<td width="50%" valign="top">
+
+### 02 / VoiceOps
+**Ask in Hinglish. Get a sourced answer.**
+
+A voice assistant prototype using a fictional insurance FAQ, retrieval with PostgreSQL/pgvector, and streaming speech. Also includes a recorded-incident investigation mode.
+
+`TypeScript` `Fastify` `React` `pgvector` `MCP` `Sarvam`
+
+[Explore code →](https://github.com/Dipen-t/voice-ops)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 03 / EvolveKit
+**Propose. Preview. Approve. Publish. Roll back.**
+
+A runtime evolution foundation for existing apps. AI proposes changes within registered capabilities; server validation, exact-revision approval, and version history govern activation.
+
+`TypeScript` `React` `Fastify` `Prisma` `PostgreSQL`
+
+[Explore code →](https://github.com/Dipen-t/living-ai)
+
+</td>
+<td width="50%" valign="top">
+
+### 04 / Checkpoint
+**Give coding agents architectural memory.**
+
+An experimental developer tool for enforcing project constraints, remembering engineering decisions, and checking actual diffs. Built around local rule retrieval and human decision points.
+
+`TypeScript` `CLI` `BM25` `Git`
+
+[Explore code →](https://github.com/Dipen-t/checkpoint)
+
+</td>
+</tr>
+</table>
+
+**Also on the workbench**
+
+- **[Saathi](https://github.com/Dipen-t/Saathi)** — a local social platform for discovering nearby people, conversations, plans, and meetups. Next.js, Supabase Realtime, and Drizzle.
+- **[Tracker](https://github.com/Dipen-t/Tracker)** — task and time tracking with server-side timers, productivity charts, CSV export, and AI-assisted task creation. [Live demo ↗](https://tracker-chi-blue.vercel.app/)
+- **[Dhanlaxmi Catering](https://github.com/Dipen-t/dhanlaxmi-ui)** — a responsive, motion-rich website with scroll-driven compositions, accessible controls, and reduced-motion support.
+
+## Engineering in the real world
+
+Most of my professional work is private. Here is the engineering context I can share:
+
+| System | Scale & engineering focus |
+| :--- | :--- |
+| **Municipal GIS & field operations** | **150,000+ consumer records · 50+ wards.** Offline data collection, GPS/GIS mapping, photos, signatures, and synchronization. |
+| **Education & career platform** | **10+ organizations · 7+ staff roles.** Tenant isolation, RBAC, review workflows, resume builders, and PDF generation. |
+| **Browser automation** | **100+ colleges.** Playwright pipelines for dynamically rendered sites, reusable extraction, and proxy-based workflows. |
+| **Construction operations** | **5+ operational roles.** GPS-linked camera check-ins, material approvals, and photo-verified dispatch. |
+
+The questions I bring to a project: **What happens when the network drops? Can tenants see each other's data? What survives a partial failure? Can someone use this without a walkthrough?**
+
+## Toolbox
+
+| Area | Tools I work with |
+| :--- | :--- |
+| **Languages** | TypeScript · JavaScript · PHP · SQL |
+| **Interfaces** | React · Next.js · Tailwind CSS · Vite |
+| **APIs & live systems** | Node.js · Fastify · Express · WebSockets · Socket.IO · Supabase Realtime |
+| **Data & background work** | PostgreSQL · MongoDB · MySQL · Redis · BullMQ · Prisma · Drizzle · Supabase |
+| **AI & automation** | Retrieval/RAG · pgvector · MCP · Playwright · Browser automation |
+| **Infrastructure & GIS** | Docker · Linux · Git · GitHub Actions · QGIS · Mapbox |
+
+## A year of building, in 3D
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-green.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./profile-3d-contrib/profile-green-animate.svg" />
+  <img src="./profile-3d-contrib/profile-green-animate.svg" width="100%" alt="Dipen's GitHub contributions over the past year, shown as a 3D skyline" />
+</picture>
+
+<sub>Generated daily from GitHub contribution data with <a href="https://github.com/yoshi389111/github-profile-3d-contrib">GitHub Profile 3D Contrib</a>. <a href="https://github.com/Dipen-t/Dipen-t/actions/workflows/profile-3d.yml">Generation status ↗</a></sub>
 
 ---
 
-## What I'm building right now: Saathi
+**B.K. Birla College Hackathon winner** — part of the team behind an AI-powered summarization tool.
 
-Saathi is a local social platform — the idea is to help people discover others near them, start conversations, make plans together, and actually meet up in real life instead of just scrolling past each other forever.
-
-It's less "endless feed" and more "here's who's around, here's what's happening, go do something." There's a Karma Points system baked into every profile too, so reputation and participation actually mean something in the community.
-
-**On the real-time side**, I've been leaning heavily on WebSockets and Supabase Realtime — live typing indicators, instant message sync, conversation updates that don't need a refresh. Getting that to feel *actually* instant across multiple connected users was one of the more fun problems here.
-
-**Core stuff the product does:**
-- Discover people nearby
-- Start conversations with locals
-- Create and join plans/activities
-- Turn a chat into an actual meetup
-- Build reputation through Karma Points
-
-**Stack:** Next.js, TypeScript, Supabase, Supabase Realtime, WebSockets, Drizzle ORM
-
-→ [Check out the repo](https://github.com/Dipen-t/Saathi)
-
----
-
-## Stuff I've built professionally (mostly private repos, sorry)
-
-I can't link most of this because it belongs to clients or employers, but here's a rundown of the problems I've actually shipped solutions for:
-
-**GIS-based municipal survey platform** — Built a field operations tool handling 150,000+ consumer records across 50+ municipal wards. Field workers needed to collect property data, photos, and signatures *without reliable internet*, capture GPS + GIS IDs, and have it all sync up later into dashboards admins could actually use. Offline-first was non-negotiable here, which made a lot of "easy" features suddenly not easy.
-
-**Multi-tenant education/career platform** — Worked on a system serving 10+ organizations, each with 7+ different staff roles, all needing clean data isolation and proper RBAC. On top of that: resume builders, essay review workflows with draft history, internship tracking, certifications, and PDF generation. The tricky part was less the individual features and more making sure ten different orgs never accidentally saw each other's data.
-
-**Browser automation pipeline for 100+ colleges** — Needed structured data pulled from a bunch of JS-heavy, dynamically rendered sites. Built this with Playwright running headful, routed through proxies, with reusable extraction logic that fed straight into production systems. Automation like this breaks constantly for weird reasons, so a lot of the work was just making it *not* break.
-
-**Construction operations system** — Attendance and dispatch management for construction sites — camera-based check-ins tied to GPS location, material request/approval flows, photo-verified dispatch, and RBAC across 5+ operational roles. Basically making sure the right person is where they say they are, and the right materials go where they're supposed to.
-
----
-
-## What I actually use day to day
-
-**Core:** JavaScript, TypeScript, PHP, SQL
-
-**Frontend:** React, Next.js, HTML/CSS, Tailwind
-
-**Backend:** Node.js, Fastify, PHP, REST APIs
-
-**Data:** PostgreSQL, MySQL, Prisma, Drizzle, Supabase
-
-**Real-time:** WebSockets, Supabase Realtime
-
-**Automation:** Playwright, web scraping, proxy-based workflows
-
-**Architecture:** Multi-tenancy, RBAC, JWT auth
-
-**Infra:** Git, Docker, Linux, cPanel
-
-**GIS:** QGIS, Mapbox, third-party APIs
-
----
-
-## Questions I keep asking myself while building things
-
-- What happens when the network drops mid-workflow?
-- What happens when this dataset is 10x bigger next year?
-- Can a non-technical field worker actually use this without training?
-- What breaks first if a request fails halfway through?
-- Is tenant data *actually* isolated, or does it just look that way in testing?
-
-I don't always get the answers right the first time, but asking them early has saved me more than once.
-
----
-
-## Currently learning / poking at
-
-- Going deeper on backend architecture with Node + Fastify
-- Real-time systems beyond basic pub/sub
-- Distributed systems and system design in general
-- Docker/Linux fundamentals I keep meaning to properly nail down
-- AI-assisted product workflows
-- Making browser automation less fragile
-- Deployment and observability — the unglamorous stuff that actually matters in prod
-
----
-
-## A win worth mentioning
-
-Won the **B.K. Birla College Hackathon** — built an AI-powered summarization tool as part of the winning team.
-
----
-
-## Get in touch
-
-**Email:** dipenntalreja@gmail.com
-
-Always up for talking through hard engineering problems, product-minded teams, or just software that's meant to be used by real people in the real world.
+Have a difficult workflow or a product idea to work through? **[Let's talk →](mailto:dipenntalreja@gmail.com)**
